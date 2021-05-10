@@ -23,7 +23,7 @@ function writePassword() {
   userPass = [];
   
   // Prompt for amount of characters needed for password
-  var userChoice = prompt("Choose your password characters between 8 and 128 ");
+  var userChoice = prompt("Choose your password characters between 8 and 128. ");
 
   console.log(userChoice);
 
@@ -35,7 +35,7 @@ function writePassword() {
   console.log(userSelection);
 
   // Validate amount of uppercase letters in password
-  var userChoiceUpper = confirm("Would like to add uppercase letters in your password?")
+  var userChoiceUpper = confirm("Would you like to add uppercase letters in your password?")
   if(userChoiceUpper) {
     userSelection.push(...charUpper);
   }
