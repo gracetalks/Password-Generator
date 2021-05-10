@@ -8,5 +8,5 @@ Below are the images of the Password Generator:
 <img src="./assets/images/img2.png" alt="Image of Prompt on Password Generator">
 <img src="./assets/images/img3.png" alt="Image of Generated Password">
 
-Here is the URL to access the website directly:
-<a href="https://gracetalks.github.io/Cynthia-Career-Portfolio/">Visit My Portfolio!</a>
+Here is the URL to access the application directly:
+<a href="https://gracetalks.github.io/Password-Generator/">Visit My Password Generator!</a>
