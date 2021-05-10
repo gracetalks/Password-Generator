@@ -54,7 +54,7 @@ function writePassword() {
     userSelection.push(...charSpecial);
   }
   else {
-    alert("Please choose option");
+    alert("Option must be chosen to generator password.");
   }
   console.log (userSelection);
   
