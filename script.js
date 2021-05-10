@@ -27,6 +27,9 @@ function writePassword() {
   /**if user choice is less than 8 or greater than 128 
    * send an alert to please choose according to instructions 
   * and sned the user back to first prompt */
+ if(userChoice) {
+   userSelection.push([]);
+ }
 
   console.log(userChoice);
 
