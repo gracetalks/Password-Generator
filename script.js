@@ -1,16 +1,16 @@
 // Assignment code here
 /** number variable */
-let charNumb = "0123456789";
+var charNumb = "0123456789";
 /** uppercase variable */
-let charUpper = "ABCDEFGHIJKLMNOPQRSTUVXWYZ";
+var charUpper = "ABCDEFGHIJKLMNOPQRSTUVXWYZ";
 //**lowercase variable */
-let charLower = "abcdefghijklmnopqrstuvwxyz";
+var charLower = "abcdefghijklmnopqrstuvwxyz";
 //**special character variable */
-let charSpecial = "!@#$%^&*_~`?><+=-";
+var charSpecial = "!@#$%^&*_~`?><+=-";
 
 /** final password array value set to empty */
-let userPass = [];
-let userSelection = [];
+var userPass = [];
+var userSelection = [];
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -22,7 +22,7 @@ function writePassword() {
   /**final password initial value set to empty */
   userPass = [];
   
-  let userChoice = prompt("Choose your password charahcters between 8 and 128 ");
+  var userChoice = prompt("Choose your password characters between 8 and 128 ");
 
   /**if user choice is less than 8 or greater than 128 
    * send an alert to please choose according to instructions 
@@ -30,25 +30,25 @@ function writePassword() {
 
   console.log(userChoice);
 
-  let userChoiceNumb = confirm("would you like to add numbers in your password?");
+  var userChoiceNumb = confirm("Would you like to add numbers in your password?");
   if(userChoiceNumb) {
     userSelection.push(...charNumb);
   }
   console.log(userSelection);
 
-  let userChoiceUpper = confirm("Would like to add uppercase letters in your password?")
+  var userChoiceUpper = confirm("Would like to add uppercase letters in your password?")
   if(userChoiceUpper) {
     userSelection.push(...charUpper);
   }
   console.log(userSelection);
 
-  let userChoiceLower = confirm("Would you like to add lowercase letters in your password?")
+  var userChoiceLower = confirm("Would you like to add lowercase letters in your password?")
   if(userChoiceLower) {
     userSelection.push(...charLower);
   }
   console.log (userSelection);
 
-  let userChoiceSpec = confirm("Would you like to add special characters to your password?")
+  var userChoiceSpec = confirm("Would you like to add special characters to your password?")
   if(userChoiceSpec) {
     userSelection.push(...charSpecial);
   }
@@ -58,11 +58,11 @@ function writePassword() {
   console.log (userSelection);
   
 
-  for (let i=0; i < userChoice; i++) {
+  for (var i=0; i < userChoice; i++) {
     userPass.push(userSelection[Math.floor(Math.random() * userSelection.length)]);
     console.log(userPass.join("+"));
   }
-
+  //**Generate password */
   document.getElementById("password").value = userPass.join("");
 
 
